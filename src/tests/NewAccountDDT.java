@@ -18,17 +18,16 @@ public class NewAccountDDT {
 	String gender;
 	String password;
 	String country;
-	String weeklyEmail;
-	String monthlyEmail;
-	String occasionalEmail;
+	boolean weeklyEmail;
+	boolean monthlyEmail;
+	boolean occasionalEmail;
 
 	//This is out test method
 	@Test
 	public void newAccountTest() {
-		System.out.println("NEW RECORD " + name + " " + email);
-		if (phone.equals("7896543210")){
-			Assert.fail();
-		}
+		System.out.println("NEW RECORD " + name + " " + email + " " + phone + " " + gender + " "+ password + " " + country + " " + weeklyEmail 
+				+ " " +monthlyEmail + " " + occasionalEmail);
+
 	}
 	
 	//This annotated method is designed to pass parameters into the class via constructor
@@ -46,8 +45,21 @@ public class NewAccountDDT {
 		this.gender = gender;
 		this.password = password;
 		this.country = country;
-		this.weeklyEmail = weeklyEmail;
-		this.monthlyEmail = monthlyEmail;
-		this.occasionalEmail = occasionalEmail;
+		if (weeklyEmail.equalsIgnoreCase("TRUE")) {
+			this.weeklyEmail = true;
+		} else {
+			this.weeklyEmail = false;
+		}
+		
+		if (monthlyEmail.equalsIgnoreCase("TRUE")) {
+			this.monthlyEmail = true;
+		} else {
+			this.monthlyEmail = false;
+		}
+		if (occasionalEmail.equalsIgnoreCase("TRUE")) {
+			this.occasionalEmail = true;
+		} else {
+			this.occasionalEmail = false;
+		}
 	}
 }
