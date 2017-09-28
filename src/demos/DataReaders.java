@@ -22,7 +22,7 @@ public class DataReaders {
 	}
 	
 	public static void readXLS() {
-		String filename = "/Users/colinknecht/Desktop/Selenium/RegisterTest.rtf";
+		String filename = "/Users/colinknecht/Desktop/Selenium/XcelTest.xls";
 		String[][] data = utilities.Excel.get(filename);
 		
 		for (String[] record : data) {
