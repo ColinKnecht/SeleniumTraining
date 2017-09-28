@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="366" started-at="2017-09-28T15:59:36Z" finished-at="2017-09-28T15:59:36Z">
+  <suite name="Default suite" duration-ms="15299" started-at="2017-09-28T16:10:53Z" finished-at="2017-09-28T16:11:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="366" started-at="2017-09-28T15:59:36Z" finished-at="2017-09-28T15:59:36Z">
+    <test name="Default test" duration-ms="15299" started-at="2017-09-28T16:10:53Z" finished-at="2017-09-28T16:11:09Z">
       <class name="tests.loginDDT">
-        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.loginDDT@5f375618]" name="loginTest" duration-ms="19" started-at="2017-09-28T11:59:36Z" data-provider="getData" finished-at="2017-09-28T11:59:36Z">
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.loginDDT@4439f31e]" name="loginTest" duration-ms="7096" started-at="2017-09-28T12:10:54Z" data-provider="getData" finished-at="2017-09-28T12:11:01Z">
           <params>
             <param index="0">
               <value>
@@ -28,7 +28,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.loginDDT@5f375618]" name="loginTest" duration-ms="12" started-at="2017-09-28T11:59:36Z" data-provider="getData" finished-at="2017-09-28T11:59:36Z">
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.loginDDT@4439f31e]" name="loginTest" duration-ms="4068" started-at="2017-09-28T12:11:01Z" data-provider="getData" finished-at="2017-09-28T12:11:05Z">
           <params>
             <param index="0">
               <value>
@@ -49,7 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.loginDDT@5f375618]" name="loginTest" duration-ms="6" started-at="2017-09-28T11:59:36Z" data-provider="getData" finished-at="2017-09-28T11:59:36Z">
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.loginDDT@4439f31e]" name="loginTest" duration-ms="3848" started-at="2017-09-28T12:11:05Z" data-provider="getData" finished-at="2017-09-28T12:11:09Z">
           <params>
             <param index="0">
               <value>
