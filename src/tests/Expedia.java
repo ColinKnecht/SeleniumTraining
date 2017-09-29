@@ -19,6 +19,7 @@ public class Expedia {
 	String checkOut = "10/09/2017";
 	String numOfGuests = "2";
 	String starRating = "star4";
+	String searchResult = "2";
 	@Test
 	public void hotelReservation(){
 		//1. Search
@@ -37,9 +38,11 @@ public class Expedia {
 		
 		//2.Modify Search results page
 		
-		driver.findElement(By.cssSelector("input[name='star'][id='" + starRating + "']")).click();
+		driver.findElement(By.cssSelector("input[name='star'][id='star4']")).click();
 		
 		//3. analyze the results and make our selection
+//		driver.findElement(By.xpath("//*[@id='17117062']/div[2]/div/a")).click();
+		driver.findElement(By.xpath("//*[@id=\'resultsContainer\']/section/article[" + searchResult +"]/div[2]/div/a")).click();
 		
 		///4. book reservation
 		
