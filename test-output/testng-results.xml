@@ -1,76 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15299" started-at="2017-09-28T16:10:53Z" finished-at="2017-09-28T16:11:09Z">
+  <suite name="Default suite" duration-ms="65209" started-at="2017-09-29T16:21:31Z" finished-at="2017-09-29T16:22:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15299" started-at="2017-09-28T16:10:53Z" finished-at="2017-09-28T16:11:09Z">
-      <class name="tests.loginDDT">
-        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.loginDDT@4439f31e]" name="loginTest" duration-ms="7096" started-at="2017-09-28T12:10:54Z" data-provider="getData" finished-at="2017-09-28T12:11:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Ellie Prynne]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ep@testemail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[ep1password]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="65209" started-at="2017-09-29T16:21:31Z" finished-at="2017-09-29T16:22:37Z">
+      <class name="tests.Expedia">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.Expedia@3a82f6ef]" name="setup" is-config="true" duration-ms="55860" started-at="2017-09-29T12:21:31Z" finished-at="2017-09-29T12:22:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.loginDDT@4439f31e]" name="loginTest" duration-ms="4068" started-at="2017-09-28T12:11:01Z" data-provider="getData" finished-at="2017-09-28T12:11:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Shawn Thompson]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[sw@testemail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[sw2password]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="hotelReservation()[pri:0, instance:tests.Expedia@3a82f6ef]" name="hotelReservation" duration-ms="9314" started-at="2017-09-29T12:22:27Z" finished-at="2017-09-29T12:22:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.loginDDT@4439f31e]" name="loginTest" duration-ms="3848" started-at="2017-09-28T12:11:05Z" data-provider="getData" finished-at="2017-09-28T12:11:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Michael Lane]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ml@testemail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[ml3password]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- hotelReservation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.Expedia@3a82f6ef]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-09-29T12:22:37Z" finished-at="2017-09-29T12:22:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-      </class> <!-- tests.loginDDT -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.Expedia -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
