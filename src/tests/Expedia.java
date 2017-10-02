@@ -1,6 +1,7 @@
 package tests;
 
 
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -43,6 +44,13 @@ public class Expedia {
 		//3. analyze the results and make our selection
 //		driver.findElement(By.xpath("//*[@id='17117062']/div[2]/div/a")).click();
 		driver.findElement(By.xpath("//*[@id=\'resultsContainer\']/section/article[" + searchResult +"]/div[2]/div/a")).click();
+		
+		//switch the window to the popup
+		ArrayList<String> windows = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(windows.get(1));
+		//print hotel name and star rating
+		String hotelName = driver.findElement(By.id("hotel-name")).getText();
+		System.out.println("Hotel Name = " + hotelName);
 		
 		///4. book reservation
 		
