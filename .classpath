@@ -8,5 +8,7 @@
 	<classpathentry kind="lib" path="/Users/colinknecht/Desktop/Selenium/cucumber-core-1.2.5.jar"/>
 	<classpathentry kind="lib" path="/Users/colinknecht/Desktop/Selenium/cucumber-java-1.2.5.jar"/>
 	<classpathentry kind="lib" path="/Users/colinknecht/Desktop/Selenium/cucumber-junit-1.2.5.jar"/>
+	<classpathentry kind="lib" path="/Users/colinknecht/Desktop/Selenium/gherkin-2.12.2.jar"/>
+	<classpathentry kind="lib" path="/Users/colinknecht/Desktop/Selenium/cucumber-jvm-deps-1.0.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
