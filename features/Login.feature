@@ -9,3 +9,17 @@ Given user is on the login page
 When user enters correct username and correct password
 Then user gets confiramtion
 
+
+Scenario Outline: the user should be able to to login
+Given user is on the login page
+When user enters <username>
+And user enters <password>
+Then user gets confirmation
+
+
+Examples:
+| username | password |
+| tim@testemail.com | trpass |
+| rw@testemail.com | rwpass |
+| jv@testemail.com | jvpass |
+
