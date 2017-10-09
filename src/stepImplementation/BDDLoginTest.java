@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -28,8 +29,19 @@ public class BDDLoginTest {
 		System.out.println("User enters correct username and password");
 		driver.findElement(By.name("ctl00$MainContent$txtUserName")).sendKeys("tim@testemail.com");
 		driver.findElement(By.name("ctl00$MainContent$txtPassword")).sendKeys("trpass");
-		driver.findElement(By.name("MainContent_btnLogin")).click();
-		
+		driver.findElement(By.name("MainContent_btnLogin")).click();	
+	}
+	
+	@When("user enters (.*)")
+	public void user_enters_username(String username){
+		System.out.println("Testing Username");
+		driver.findElement(By.name("ctl00$MainContent$txtUserName")).sendKeys(username);
+	}
+	
+	@And ("user enters (.*)")
+	public void user_enters_password(String password){
+		System.out.println("Testing Password");
+		driver.findElement(By.name("ctl00$MainContent$txtPassword")).sendKeys(password);
 	}
 	
 	@Then("^user gets confiramtion$")
