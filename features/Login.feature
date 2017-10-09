@@ -12,8 +12,8 @@ Then user gets confiramtion
 
 Scenario Outline: the user should be able to to login
 Given user is on the login page
-When user enters <username>
-And user enters <password>
+When user enters email <username>
+And user enters password <password>
 Then user gets confirmation
 
 

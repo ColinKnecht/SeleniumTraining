@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import cucumber.api.java.After;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -32,22 +33,33 @@ public class BDDLoginTest {
 		driver.findElement(By.name("MainContent_btnLogin")).click();	
 	}
 	
-	@When("user enters (.*)")
+	@When("^user enters email(.*)$")
 	public void user_enters_username(String username){
 		System.out.println("Testing Username");
 		driver.findElement(By.name("ctl00$MainContent$txtUserName")).sendKeys(username);
 	}
 	
-	@And ("user enters (.*)")
+	@And ("^user enters password(.*)$")
 	public void user_enters_password(String password){
 		System.out.println("Testing Password");
 		driver.findElement(By.name("ctl00$MainContent$txtPassword")).sendKeys(password);
+		driver.findElement(By.name("MainContent_btnLogin")).click();
 	}
+	
+//	@And("user clicks login button")
+//	public void user_clicks_login_button(){
+//		driver.findElement(By.name("MainContent_btnLogin")).click();
+//	}
 	
 	@Then("^user gets confiramtion$")
 	public void user_gets_confirmation(){
 		System.out.println("User gets confirmation");
 		driver.findElement(By.id("conf_message")).getText();
 		Assert.assertTrue(driver.findElement(By.id("conf_message")).getText().contains("success"));
+	}
+	
+	@After 
+	public void tearDown(){
+		driver.quit();
 	}
 }
